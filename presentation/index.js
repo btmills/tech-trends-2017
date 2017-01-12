@@ -22,6 +22,8 @@ import {
 	Text
 } from "spectacle";
 
+import ImageCite from './components/ImageCite.jsx';
+
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 
@@ -93,72 +95,52 @@ export default class Presentation extends React.Component {
 						</Heading>
 					</Slide>
 					<Slide bgImage={images.f117a.replace("/", "")}>
-						<Link href="https://www.cybermodeler.com/aircraft/f-117/f-117_gallery.shtml">
-							cybermodeler.com
-						</Link>
+						<ImageCite href="https://www.cybermodeler.com/aircraft/f-117/f-117_gallery.shtml"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.dir890l.replace("/", "")}>
-						<Link href="http://ca.dlink.com/products/connect/wireless-ac3200-tri-band-gigabit-router/">
-							dlink.com
-						</Link>
+						<ImageCite href="http://ca.dlink.com/products/connect/wireless-ac3200-tri-band-gigabit-router/"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.f117b.replace("/", "")}>
-						<Link href="http://www.airforceworld.com/fighter/eng/f11702.htm">
-							airforceworld.com
-						</Link>
+						<ImageCite href="http://www.airforceworld.com/fighter/eng/f11702.htm"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.rt5300u.replace("/", "")}>
-						<Link href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015">
-							theverge.com
-						</Link>
+						<ImageCite href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.charger.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps>
 							Wireless Charging
 						</Heading>
-						<Link href="http://www.technobuffalo.com/2015/06/23/your-qi-wireless-charger-is-going-to-get-a-lot-faster/">
-							technobuffalo.com
-						</Link>
+						<ImageCite href="http://www.technobuffalo.com/2015/06/23/your-qi-wireless-charger-is-going-to-get-a-lot-faster/"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.smartTv.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps padding="0 0 100% 0">
 							Smart TVs
 						</Heading>
-						<Link href="http://www.samsung.com/us/experience/smart-tv/">
-							samsung.com
-						</Link>
+						<ImageCite href="http://www.samsung.com/us/experience/smart-tv/"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.tvSticks.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps>
 							TV Sticks
 						</Heading>
-						<Link href="http://www.iphonehacks.com/2014/04/apple-tv-amazon-fire-tv-chromecast.html">
-							iphonehacks.com
-						</Link>
+						<ImageCite href="http://www.iphonehacks.com/2014/04/apple-tv-amazon-fire-tv-chromecast.html"></ImageCite>
 					</Slide>
 					<Slide bgImage={images["4k"].replace("/", "")} bgDarken={0.25}>
 						<Heading textSize="8em" caps>
 							4K
 						</Heading>
-						<Link href="http://hdwallpapershdpics.com/download-4k-ultra-hd-wallpapers/">
-							hdwallpapershdpics.com
-						</Link>
+						<ImageCite href="http://hdwallpapershdpics.com/download-4k-ultra-hd-wallpapers/"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.vr.replace("/", "")} bgDarken={0.25}>
 						<Heading caps textSize="8em">
 							VR
 						</Heading>
-						<Link href="http://venturebeat.com/2016/05/11/oculus-and-samsung-have-1m-gear-vr-wearing-users/">
-							venturebeat.com
-						</Link>
+						<ImageCite href="http://venturebeat.com/2016/05/11/oculus-and-samsung-have-1m-gear-vr-wearing-users/"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.ar.replace("/", "")} bgDarken={0.25}>
 						<Heading caps textSize="8em">
 							AR
 						</Heading>
-						<Link href="http://www.gamespot.com/images/1300-2787338/">
-							gamespot.com
-						</Link>
+						<ImageCite href="http://www.gamespot.com/images/1300-2787338/"></ImageCite>
 					</Slide>
 
 					<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
