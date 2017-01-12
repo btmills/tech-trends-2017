@@ -45,7 +45,13 @@ const images = {
 	dir890l: require("../assets/dir-890l.jpg"),
 	f117a: require("../assets/f117a.jpg"),
 	f117b: require("../assets/f117b.jpg"),
-	rt5300u: require("../assets/asus-rt-ac5300u.png")
+	rt5300u: require("../assets/asus-rt-ac5300u.png"),
+	charger: require("../assets/charging_phone.png"),
+	smartTv: require("../assets/smart_tv.jpg"),
+	tvSticks: require("../assets/tv_sticks.jpg"),
+	vr: require("../assets/vr.jpg"),
+	ar: require("../assets/ar.jpg"),
+	"4k": require("../assets/4k.jpg"),
 };
 
 preloader(images);
@@ -104,6 +110,54 @@ export default class Presentation extends React.Component {
 					<Slide bgImage={images.rt5300u.replace("/", "")}>
 						<Link href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015">
 							theverge.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.charger.replace("/", "")} bgDarken={0.25}>
+						<Heading fit caps>
+							Wireless Charging
+						</Heading>
+						<Link href="http://www.technobuffalo.com/2015/06/23/your-qi-wireless-charger-is-going-to-get-a-lot-faster/">
+							technobuffalo.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.smartTv.replace("/", "")} bgDarken={0.25}>
+						<Heading fit caps padding="0 0 100% 0">
+							Smart TVs
+						</Heading>
+						<Link href="http://smartsamsungtv.com/">
+							smartsamsungtv.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.tvSticks.replace("/", "")} bgDarken={0.25}>
+						<Heading fit caps>
+							TV Sticks
+						</Heading>
+						<Link href="http://www.iphonehacks.com/2014/04/apple-tv-amazon-fire-tv-chromecast.html">
+							iphonehacks.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images["4k"].replace("/", "")} bgDarken={0.25}>
+						<Heading textSize="8em" caps>
+							4K
+						</Heading>
+						<Link href="http://hdwallpapershdpics.com/download-4k-ultra-hd-wallpapers/">
+							hdwallpapershdpics.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.vr.replace("/", "")} bgDarken={0.25}>
+						<Heading caps textSize="8em">
+							VR
+						</Heading>
+						<Link href="http://venturebeat.com/2016/05/11/oculus-and-samsung-have-1m-gear-vr-wearing-users/">
+							venturebeat.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.ar.replace("/", "")} bgDarken={0.25}>
+						<Heading caps textSize="8em">
+							AR
+						</Heading>
+						<Link href="http://www.gamespot.com/images/1300-2787338/">
+							gamespot.com
 						</Link>
 					</Slide>
 
