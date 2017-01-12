@@ -40,7 +40,12 @@ const images = {
 	city: require("../assets/city.jpg"),
 	kat: require("../assets/kat.png"),
 	logo: require("../assets/formidable-logo.svg"),
-	markdown: require("../assets/markdown.png")
+	markdown: require("../assets/markdown.png"),
+
+	dir890l: require("../assets/dir-890l.jpg"),
+	f117a: require("../assets/f117a.jpg"),
+	f117b: require("../assets/f117b.jpg"),
+	rt5300u: require("../assets/asus-rt-ac5300u.png")
 };
 
 preloader(images);
@@ -53,29 +58,56 @@ export default class Presentation extends React.Component {
 	render() {
 		return (
 			<Spectacle theme={theme}>
-				<Deck transition={["zoom", "slide"]} transitionDuration={500}>
-					<Slide transition={["zoom"]} bgColor="primary">
-						<Heading size={1} fit caps lineHeight={1} textColor="black">
-							Spectacle
+				<Deck transition={["slide", "fade"]} transitionDuration={500}>
+					<Slide bgColor="primary">
+						<Heading size={1} fit caps textColor="black">
+							2017 Tech Trends
 						</Heading>
 						<Heading size={1} fit caps>
-							A ReactJS Presentation Library
+							You Need to Know
 						</Heading>
-						<Heading size={1} fit caps textColor="black">
-							Where You Can Write Your Decks In JSX
-						</Heading>
-						<Link href="https://github.com/FormidableLabs/spectacle">
-							<Text bold caps textColor="tertiary">View on Github</Text>
-						</Link>
-						<Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text>
 					</Slide>
-					<Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
+					<Slide>
+						<Heading caps>
+							You Won't Believe These 2017 Tech Trends Aren't What They Want You To Think They Are
+						</Heading>
+					</Slide>
+					<Slide bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
 						<Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
 						<Heading size={2} caps fit textColor="primary" textFont="primary">
 							Wait what?
 						</Heading>
 					</Slide>
-					<Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+					<Slide>
+						<Heading fit caps textColor="black">
+							Stealth Bomber?
+						</Heading>
+						<Heading fit caps>
+							Or Wi-Fi Router?
+						</Heading>
+					</Slide>
+					<Slide bgImage={images.f117a.replace("/", "")}>
+						<Link href="https://www.cybermodeler.com/aircraft/f-117/f-117_gallery.shtml">
+							cybermodeler.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.dir890l.replace("/", "")}>
+						<Link href="http://ca.dlink.com/products/connect/wireless-ac3200-tri-band-gigabit-router/">
+							dlink.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.f117b.replace("/", "")}>
+						<Link href="http://www.airforceworld.com/fighter/eng/f11702.htm">
+							airforceworld.com
+						</Link>
+					</Slide>
+					<Slide bgImage={images.rt5300u.replace("/", "")}>
+						<Link href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015">
+							theverge.com
+						</Link>
+					</Slide>
+
+					<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
 						<CodePane
 							lang="jsx"
 							source={require("raw!../assets/deck.example")}
