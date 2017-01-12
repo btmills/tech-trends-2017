@@ -124,8 +124,8 @@ export default class Presentation extends React.Component {
 						<Heading fit caps padding="0 0 100% 0">
 							Smart TVs
 						</Heading>
-						<Link href="http://smartsamsungtv.com/">
-							smartsamsungtv.com
+						<Link href="http://www.samsung.com/us/experience/smart-tv/">
+							samsung.com
 						</Link>
 					</Slide>
 					<Slide bgImage={images.tvSticks.replace("/", "")} bgDarken={0.25}>
