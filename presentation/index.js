@@ -62,7 +62,10 @@ const images = {
 	dataAnalytics: require("../assets/data-analytics.jpg"),
 	smartCylinder: require("../assets/smart-cylinder.jpg"),
 	lightbulb: require("../assets/lightbulb.jpg"),
-	mirai: require("../assets/mirai.jpg")
+	mirai: require("../assets/mirai.jpg"),
+	ml: require("../assets/ml.png"),
+	ai: require("../assets/AI.jpg"),
+	magic: require("../assets/magic-trick.jpg")
 };
 
 preloader(images);
@@ -172,6 +175,25 @@ export default class Presentation extends React.Component {
 							And Profit
 						</Heading>
 						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/" />
+					</Slide>
+					<Slide bgImage={images.ml.replace("/", "")} bgDarken={0.25}>
+						<Heading caps textSize="6em">
+							AI and ML
+						</Heading>
+						<ImageCite href="http://microexplosion.com/wp-content/uploads/2015/01/magic-trick.jpg"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.magic.replace("/", "")} bgDarken={0.25}>
+						<BlockQuote>
+							<Quote>Any sufficiently advanced technology is indistinguishable from magic.</Quote>
+							<Cite>Arthur C. Clarke</Cite>
+						</BlockQuote>
+						<ImageCite href="https://www.extremetech.com/wp-content/uploads/2016/01/movidius-machine-intelligence.png"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.ai.replace("/", "")} bgDarken={0.25}>
+						<Heading caps fit>
+							Realistic Expectations
+						</Heading>
+						<ImageCite href="http://www.iqworkforce.com/wp-content/uploads/2015/11/AI.jpg"></ImageCite>
 					</Slide>
 
 					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
