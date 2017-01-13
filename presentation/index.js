@@ -65,6 +65,7 @@ const images = {
 	mirai: require("../assets/mirai.jpg"),
 	ml: require("../assets/ml.png"),
 	ai: require("../assets/AI.jpg"),
+	car: require("../assets/car.jpg"),
 	magic: require("../assets/magic-trick.jpg")
 };
 
@@ -182,9 +183,9 @@ export default class Presentation extends React.Component {
 						</Heading>
 						<ImageCite href="http://microexplosion.com/wp-content/uploads/2015/01/magic-trick.jpg"></ImageCite>
 					</Slide>
-					<Slide bgImage={images.magic.replace("/", "")} bgDarken={0.25}>
+					<Slide bgImage={images.magic.replace("/", "")} align="flex-start flex-end" bgDarken={0.25}>
 						<BlockQuote>
-							<Quote>Any sufficiently advanced technology is indistinguishable from magic.</Quote>
+							<Quote textColor="white">Any sufficiently advanced technology is indistinguishable from magic.</Quote>
 							<Cite>Arthur C. Clarke</Cite>
 						</BlockQuote>
 						<ImageCite href="https://www.extremetech.com/wp-content/uploads/2016/01/movidius-machine-intelligence.png"></ImageCite>
@@ -194,6 +195,21 @@ export default class Presentation extends React.Component {
 							Realistic Expectations
 						</Heading>
 						<ImageCite href="http://www.iqworkforce.com/wp-content/uploads/2015/11/AI.jpg"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.smartCylinder.replace("/", "")} bgDarken={0.25} align="flex-start">
+						<Heading caps textSize="3.5em" textAlign="right">
+							Virtual
+						</Heading>
+						<Heading caps textSize="3.5em" textAlign="right">
+							Assistants
+						</Heading>
+						<ImageCite href="http://www.roboticstrends.com/article/google_home_vs._amazon_echo_which_personal_assistant_is_better" />
+					</Slide>
+					<Slide bgImage={images.car.replace("/", "")} align="center flex-start" bgDarken={0.25}>
+						<Heading caps textSize="3.5em">
+							Self-driving Cars
+						</Heading>
+						<ImageCite href="http://techzulu.com/wp-content/uploads/2016/07/141002-self-driving-car-02_f124b0329691bfb4519f2108e0a10427.jpg" />
 					</Slide>
 
 					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
