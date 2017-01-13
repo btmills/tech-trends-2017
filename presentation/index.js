@@ -68,7 +68,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-	primary: "#ff4081"
+	primary: "#000"
 });
 
 export default class Presentation extends React.Component {
@@ -76,11 +76,11 @@ export default class Presentation extends React.Component {
 		return (
 			<Spectacle theme={theme}>
 				<Deck transition={["slide", "fade"]} transitionDuration={500}>
-					<Slide bgColor="primary">
-						<Heading size={1} fit caps textColor="black">
+					<Slide>
+						<Heading fit caps>
 							2017 Tech Trends
 						</Heading>
-						<Heading size={1} fit caps>
+						<Heading fit caps>
 							You Need to Know
 						</Heading>
 					</Slide>
@@ -89,14 +89,14 @@ export default class Presentation extends React.Component {
 							You Won't Believe These 2017 Tech Trends Aren't What They Want You To Think They Are
 						</Heading>
 					</Slide>
-					<Slide bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
+					<Slide notes="You can even put notes on your slide. How awesome is that?">
 						<Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
-						<Heading size={2} caps fit textColor="primary" textFont="primary">
+						<Heading caps fit>
 							Wait what?
 						</Heading>
 					</Slide>
 					<Slide>
-						<Heading fit caps textColor="black">
+						<Heading fit caps>
 							Stealth Bomber?
 						</Heading>
 						<Heading fit caps>
@@ -104,70 +104,70 @@ export default class Presentation extends React.Component {
 						</Heading>
 					</Slide>
 					<Slide bgImage={images.f117a.replace("/", "")}>
-						<ImageCite href="https://www.cybermodeler.com/aircraft/f-117/f-117_gallery.shtml"></ImageCite>
+						<ImageCite href="https://www.cybermodeler.com/aircraft/f-117/f-117_gallery.shtml" />
 					</Slide>
 					<Slide bgImage={images.dir890l.replace("/", "")}>
-						<ImageCite href="http://ca.dlink.com/products/connect/wireless-ac3200-tri-band-gigabit-router/"></ImageCite>
+						<ImageCite href="http://ca.dlink.com/products/connect/wireless-ac3200-tri-band-gigabit-router/" />
 					</Slide>
 					<Slide bgImage={images.f117b.replace("/", "")}>
-						<ImageCite href="http://www.airforceworld.com/fighter/eng/f11702.htm"></ImageCite>
+						<ImageCite href="http://www.airforceworld.com/fighter/eng/f11702.htm" />
 					</Slide>
 					<Slide bgImage={images.rt5300u.replace("/", "")}>
-						<ImageCite href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015"></ImageCite>
+						<ImageCite href="http://www.theverge.com/2015/9/2/9238057/asus-rt-ac5300u-triband-wireless-router-ifa-2015" />
 					</Slide>
 					<Slide bgImage={images.charger.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps>
 							Wireless Charging
 						</Heading>
-						<ImageCite href="http://www.technobuffalo.com/2015/06/23/your-qi-wireless-charger-is-going-to-get-a-lot-faster/"></ImageCite>
+						<ImageCite href="http://www.technobuffalo.com/2015/06/23/your-qi-wireless-charger-is-going-to-get-a-lot-faster/" />
 					</Slide>
 					<Slide bgImage={images.smartTv.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps padding="0 0 100% 0">
 							Smart TVs
 						</Heading>
-						<ImageCite href="http://www.samsung.com/us/experience/smart-tv/"></ImageCite>
+						<ImageCite href="http://www.samsung.com/us/experience/smart-tv/" />
 					</Slide>
 					<Slide bgImage={images.tvSticks.replace("/", "")} bgDarken={0.25}>
 						<Heading fit caps>
 							TV Sticks
 						</Heading>
-						<ImageCite href="http://www.iphonehacks.com/2014/04/apple-tv-amazon-fire-tv-chromecast.html"></ImageCite>
+						<ImageCite href="http://www.iphonehacks.com/2014/04/apple-tv-amazon-fire-tv-chromecast.html" />
 					</Slide>
 					<Slide bgImage={images["4k"].replace("/", "")} bgDarken={0.25}>
 						<Heading textSize="8em" caps>
 							4K
 						</Heading>
-						<ImageCite href="http://hdwallpapershdpics.com/download-4k-ultra-hd-wallpapers/"></ImageCite>
+						<ImageCite href="http://hdwallpapershdpics.com/download-4k-ultra-hd-wallpapers/" />
 					</Slide>
 					<Slide bgImage={images.vr.replace("/", "")} bgDarken={0.25}>
 						<Heading caps textSize="8em">
 							VR
 						</Heading>
-						<ImageCite href="http://venturebeat.com/2016/05/11/oculus-and-samsung-have-1m-gear-vr-wearing-users/"></ImageCite>
+						<ImageCite href="http://venturebeat.com/2016/05/11/oculus-and-samsung-have-1m-gear-vr-wearing-users/" />
 					</Slide>
 					<Slide bgImage={images.ar.replace("/", "")} bgDarken={0.25}>
 						<Heading caps textSize="8em">
 							AR
 						</Heading>
-						<ImageCite href="http://www.gamespot.com/images/1300-2787338/"></ImageCite>
+						<ImageCite href="http://www.gamespot.com/images/1300-2787338/" />
 					</Slide>
 					<Slide bgImage={images.drone.replace("/", "")} align="center flex-end" bgDarken={0.25}>
 						<Heading caps textSize="8em">
 							Drones
 						</Heading>
-						<ImageCite href="http://www.mwananchi.co.tz/habari/1597578-3392092-vcyjjxz/index.html"></ImageCite>
+						<ImageCite href="http://www.mwananchi.co.tz/habari/1597578-3392092-vcyjjxz/index.html" />
 					</Slide>
 					<Slide bgImage={images.funDrone.replace("/", "")} align="flex-start flex-start" bgDarken={0.25}>
 						<Heading caps textSize="6em" padding="0 50% 0 0">
 							For Fun
 						</Heading>
-						<ImageCite href="http://www.mikecoleart.com/wp-content/uploads/2016/10/drones-fun.jpg"></ImageCite>
+						<ImageCite href="http://www.mikecoleart.com/wp-content/uploads/2016/10/drones-fun.jpg" />
 					</Slide>
-					<Slide bgImage={images.profitDrone.replace("/", "")} align="center flex-end"  bgDarken={0.25}>
+					<Slide bgImage={images.profitDrone.replace("/", "")} align="center flex-end" bgDarken={0.25}>
 						<Heading caps textSize="6em">
 							And Profit
 						</Heading>
-						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/"></ImageCite>
+						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/" />
 					</Slide>
 
 					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
