@@ -255,6 +255,13 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 						<Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
 					</Slide>*/}
 
+					<Slide bgImage={require("../assets/chatbot.jpg")} bgDarken={0.25} align="center flex-start">
+						<Heading fit caps>
+							Chatbots
+						</Heading>
+						<ImageCite href="http://www.ibtimes.com/mark-zuckerberg-opens-facebook-messenger-third-party-apps-allowing-users-send-gifs-1859124" />
+					</Slide>
+
 					<Slide bgImage={require("../assets/industry.jpg")} bgDarken={0.25} notes="Factories, warehouses, and farms">
 						<Heading fit caps>
 							Industry
