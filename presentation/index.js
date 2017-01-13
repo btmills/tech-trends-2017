@@ -62,7 +62,13 @@ const images = {
 	dataAnalytics: require("../assets/data-analytics.jpg"),
 	smartCylinder: require("../assets/smart-cylinder.jpg"),
 	lightbulb: require("../assets/lightbulb.jpg"),
-	mirai: require("../assets/mirai.jpg")
+	mirai: require("../assets/mirai.jpg"),
+	ml: require("../assets/ml.png"),
+	ai: require("../assets/AI.jpg"),
+	car: require("../assets/car.jpg"),
+	tesla: require("../assets/tesla.jpg"),
+	noWheel: require("../assets/no-wheel.jpg"),
+	magic: require("../assets/magic-trick.jpg")
 };
 
 preloader(images);
@@ -172,6 +178,52 @@ export default class Presentation extends React.Component {
 							And Profit
 						</Heading>
 						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/" />
+					</Slide>
+					<Slide bgImage={images.ml.replace("/", "")} bgDarken={0.25}>
+						<Heading caps textSize="6em">
+							AI and ML
+						</Heading>
+						<ImageCite href="http://microexplosion.com/wp-content/uploads/2015/01/magic-trick.jpg"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.magic.replace("/", "")} align="flex-start flex-end" bgDarken={0.25}>
+						<BlockQuote>
+							<Quote>Any sufficiently advanced technology is indistinguishable from magic.</Quote>
+							<Cite>Arthur C. Clarke</Cite>
+						</BlockQuote>
+						<ImageCite href="https://www.extremetech.com/wp-content/uploads/2016/01/movidius-machine-intelligence.png"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.ai.replace("/", "")} bgDarken={0.25}>
+						<Heading caps fit>
+							Realistic Expectations
+						</Heading>
+						<ImageCite href="http://www.iqworkforce.com/wp-content/uploads/2015/11/AI.jpg"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.smartCylinder.replace("/", "")} bgDarken={0.25} align="flex-start">
+						<Heading caps textSize="3.5em" textAlign="right">
+							Virtual
+						</Heading>
+						<Heading caps textSize="3.5em" textAlign="right">
+							Assistants
+						</Heading>
+						<ImageCite href="http://www.roboticstrends.com/article/google_home_vs._amazon_echo_which_personal_assistant_is_better" />
+					</Slide>
+					<Slide bgImage={images.car.replace("/", "")} align="center flex-start" bgDarken={0.25}>
+						<Heading caps textSize="3.5em">
+							Self-driving Cars
+						</Heading>
+						<ImageCite href="http://techzulu.com/wp-content/uploads/2016/07/141002-self-driving-car-02_f124b0329691bfb4519f2108e0a10427.jpg" />
+					</Slide>
+					<Slide bgImage={images.tesla.replace("/", "")} align="flex-start flex-end" bgDarken={0.25}>
+						<Heading caps textSize="3.5em" textAlign="left">
+							Driver Assist
+						</Heading>
+						<ImageCite href="https://www.tesla.com/sites/default/files/images/software_update.jpg" />
+					</Slide>
+					<Slide bgImage={images.noWheel.replace("/", "")} align="flex-start flex-start" bgDarken={0.25}>
+						<Heading caps textSize="2em">
+							Look Ma, No Steering Wheel
+						</Heading>
+						<ImageCite href="http://www.digitaltrends.com/cars/alphabet-shelves-google-self-driving-car-waymo/" />
 					</Slide>
 
 					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
