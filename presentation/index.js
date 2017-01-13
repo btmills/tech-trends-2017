@@ -196,6 +196,11 @@ export default class Presentation extends React.Component {
 						<Heading caps fit>
 							Realistic Expectations
 						</Heading>
+						<Appear>
+							<Heading size={2} caps fit textColor="tertiary">
+								(of artificial intelligence)
+							</Heading>
+						</Appear>
 						<ImageCite href="http://www.iqworkforce.com/wp-content/uploads/2015/11/AI.jpg"></ImageCite>
 					</Slide>
 					<Slide bgImage={images.smartCylinder.replace("/", "")} bgDarken={0.25} align="flex-start">
