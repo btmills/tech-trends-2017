@@ -56,7 +56,7 @@ const images = {
 	"4k": require("../assets/4k.jpg"),
 	drone: require("../assets/drone.jpg"),
 	funDrone: require("../assets/drones-fun.jpg"),
-	profitDrone: require("../assets/profit-drone.jpg"),
+	profitDrone: require("../assets/profit-drone.jpg")
 };
 
 preloader(images);
@@ -164,7 +164,7 @@ export default class Presentation extends React.Component {
 						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/"></ImageCite>
 					</Slide>
 
-					<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
 						<CodePane
 							lang="jsx"
 							source={require("raw!../assets/deck.example")}
@@ -253,6 +253,40 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 							Made with love in Seattle by
 						</Heading>
 						<Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
+					</Slide>*/}
+
+					<Slide bgImage={require("../assets/industry.jpg")} bgDarken={0.25} notes="Factories, warehouses, and farms">
+						<Heading fit caps>
+							Industry
+						</Heading>
+						<ImageCite href="http://www.costmanagement.eu/industries" />
+					</Slide>
+					<Slide bgImage={require("../assets/data-analytics.jpg")} bgDarken={0.25}>
+						<Heading caps textSize="8em" textAlign="right">
+							Data
+						</Heading>
+						<ImageCite href="http://ise.illinois.edu/research/data-analytics.html" />
+					</Slide>
+					<Slide bgImage={require("../assets/smart-cylinder.jpg")} bgDarken={0.25} align="flex-start">
+						<Heading caps textSize="4em" textAlign="right">
+							Smart
+						</Heading>
+						<Heading caps textSize="4em" textAlign="right">
+							Cylinders
+						</Heading>
+						<ImageCite href="http://www.roboticstrends.com/article/google_home_vs._amazon_echo_which_personal_assistant_is_better" />
+					</Slide>
+					<Slide bgImage={require("../assets/lightbulb.jpg")} bgDarken={0.25} align="center flex-end">
+						<Heading fit caps>
+							Smart Home
+						</Heading>
+						<ImageCite href="http://www.philips.de/a-w/about/news/archive/standard/news/consumerlifestyle/20130710_Vierseitiges_Ambilight_und_Hue_erweitern_das_Philips_Fernseherlebnis.html" />
+					</Slide>
+					<Slide bgImage={require("../assets/mirai.jpg")} bgDarken={0.25}>
+						<Heading fit caps>
+							Security
+						</Heading>
+						<ImageCite href="http://mydirectsecurity.com/" />
 					</Slide>
 				</Deck>
 			</Spectacle>
