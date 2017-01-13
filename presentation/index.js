@@ -68,8 +68,12 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-	primary: "#000"
+	primary: "#000",
+	secondary: "#fff"
 });
+window.theme = theme;
+theme.screen.components.quote.color = theme.screen.colors.secondary;
+theme.screen.components.quote.borderColor = theme.screen.components.quote.color;
 
 export default class Presentation extends React.Component {
 	render() {
@@ -266,6 +270,12 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 							Chatbots
 						</Heading>
 						<ImageCite href="http://www.ibtimes.com/mark-zuckerberg-opens-facebook-messenger-third-party-apps-allowing-users-send-gifs-1859124" />
+					</Slide>
+					<Slide>
+						<BlockQuote>
+							<Quote>AI is whatever hasn't been done yet.</Quote>
+							<Cite>Tesler's Theorem</Cite>
+						</BlockQuote>
 					</Slide>
 
 					<Slide bgImage={images.industry.replace("/", "")} bgDarken={0.25} notes="Factories, warehouses, and farms">
