@@ -66,6 +66,8 @@ const images = {
 	ml: require("../assets/ml.png"),
 	ai: require("../assets/AI.jpg"),
 	car: require("../assets/car.jpg"),
+	tesla: require("../assets/tesla.jpg"),
+	noWheel: require("../assets/no-wheel.jpg"),
 	magic: require("../assets/magic-trick.jpg")
 };
 
@@ -185,7 +187,7 @@ export default class Presentation extends React.Component {
 					</Slide>
 					<Slide bgImage={images.magic.replace("/", "")} align="flex-start flex-end" bgDarken={0.25}>
 						<BlockQuote>
-							<Quote textColor="white">Any sufficiently advanced technology is indistinguishable from magic.</Quote>
+							<Quote>Any sufficiently advanced technology is indistinguishable from magic.</Quote>
 							<Cite>Arthur C. Clarke</Cite>
 						</BlockQuote>
 						<ImageCite href="https://www.extremetech.com/wp-content/uploads/2016/01/movidius-machine-intelligence.png"></ImageCite>
@@ -210,6 +212,18 @@ export default class Presentation extends React.Component {
 							Self-driving Cars
 						</Heading>
 						<ImageCite href="http://techzulu.com/wp-content/uploads/2016/07/141002-self-driving-car-02_f124b0329691bfb4519f2108e0a10427.jpg" />
+					</Slide>
+					<Slide bgImage={images.tesla.replace("/", "")} align="flex-start flex-end" bgDarken={0.25}>
+						<Heading caps textSize="3.5em" textAlign="left">
+							Driver Assist
+						</Heading>
+						<ImageCite href="https://www.tesla.com/sites/default/files/images/software_update.jpg" />
+					</Slide>
+					<Slide bgImage={images.noWheel.replace("/", "")} align="flex-start flex-start" bgDarken={0.25}>
+						<Heading caps textSize="2em">
+							Look Ma, No Steering Wheel
+						</Heading>
+						<ImageCite href="http://www.digitaltrends.com/cars/alphabet-shelves-google-self-driving-car-waymo/" />
 					</Slide>
 
 					{/*<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
