@@ -23,6 +23,7 @@ import {
 } from "spectacle";
 
 import ImageCite from './components/ImageCite.jsx';
+import TimedSlide from './components/TimedSlide.jsx';
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -71,19 +72,20 @@ const theme = createTheme({
 	primary: "#ff4081"
 });
 
-export default class Presentation extends React.Component {
+class Presentation extends React.Component {
+
 	render() {
 		return (
 			<Spectacle theme={theme}>
 				<Deck transition={["slide", "fade"]} transitionDuration={500}>
-					<Slide bgColor="primary">
+					<TimedSlide bgColor="primary" showFor={3000}>
 						<Heading size={1} fit caps textColor="black">
 							2017 Tech Trends
 						</Heading>
 						<Heading size={1} fit caps>
 							You Need to Know
 						</Heading>
-					</Slide>
+					</TimedSlide>
 					<Slide>
 						<Heading caps>
 							You Won't Believe These 2017 Tech Trends Aren't What They Want You To Think They Are
@@ -306,3 +308,5 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 		);
 	}
 }
+
+export default Presentation;
