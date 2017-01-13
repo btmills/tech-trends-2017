@@ -54,6 +54,9 @@ const images = {
 	vr: require("../assets/vr.jpg"),
 	ar: require("../assets/ar.jpg"),
 	"4k": require("../assets/4k.jpg"),
+	drone: require("../assets/drone.jpg"),
+	funDrone: require("../assets/drones-fun.jpg"),
+	profitDrone: require("../assets/profit-drone.jpg"),
 };
 
 preloader(images);
@@ -141,6 +144,24 @@ export default class Presentation extends React.Component {
 							AR
 						</Heading>
 						<ImageCite href="http://www.gamespot.com/images/1300-2787338/"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.drone.replace("/", "")} align="center flex-end" bgDarken={0.25}>
+						<Heading caps textSize="8em">
+							Drones
+						</Heading>
+						<ImageCite href="http://www.mwananchi.co.tz/habari/1597578-3392092-vcyjjxz/index.html"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.funDrone.replace("/", "")} align="flex-start flex-start" bgDarken={0.25}>
+						<Heading caps textSize="6em" padding="0 50% 0 0">
+							For Fun
+						</Heading>
+						<ImageCite href="http://www.mikecoleart.com/wp-content/uploads/2016/10/drones-fun.jpg"></ImageCite>
+					</Slide>
+					<Slide bgImage={images.profitDrone.replace("/", "")} align="center flex-end"  bgDarken={0.25}>
+						<Heading caps textSize="6em">
+							And Profit
+						</Heading>
+						<ImageCite href="https://www.technologyreview.com/s/602527/delivery-option-drone-arrival-estimate-2020/"></ImageCite>
 					</Slide>
 
 					<Slide bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
