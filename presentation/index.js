@@ -65,7 +65,8 @@ const theme = createTheme({
 	primary: "#ff4081"
 });
 
-export default class Presentation extends React.Component {
+class Presentation extends React.Component {
+
 	render() {
 		return (
 			<Spectacle theme={theme}>
@@ -292,4 +293,32 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 			</Spectacle>
 		);
 	}
+
+	componentDidMount() {
+		if (this.props.lightningMode > 0) {
+			console.log("LIGHTNING MODE ACTIVATED CLICK BUTTON TO START");
+
+			let started = false;
+
+			const btns = document.querySelectorAll('button');
+
+			btns[btns.length - 1].addEventListener('click', () => {
+				if (!started) {
+					console.log("LETS DO THIS");
+					started = true;
+
+					const intId = window.setInterval(() => {
+						const btns = document.querySelectorAll('button');
+						btns[btns.length - 1].click();
+					}, this.props.lightningMode);
+				}
+			});
+		}
+	}
 }
+
+Presentation.defaultProps = {
+	lightningMode: 0
+};
+
+export default Presentation;
