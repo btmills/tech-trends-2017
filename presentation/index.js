@@ -23,6 +23,7 @@ import {
 } from "spectacle";
 
 import ImageCite from './components/ImageCite.jsx';
+import TimedSlide from './components/TimedSlide.jsx';
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -71,14 +72,14 @@ class Presentation extends React.Component {
 		return (
 			<Spectacle theme={theme}>
 				<Deck transition={["slide", "fade"]} transitionDuration={500}>
-					<Slide bgColor="primary">
+					<TimedSlide bgColor="primary" showFor={3000}>
 						<Heading size={1} fit caps textColor="black">
 							2017 Tech Trends
 						</Heading>
 						<Heading size={1} fit caps>
 							You Need to Know
 						</Heading>
-					</Slide>
+					</TimedSlide>
 					<Slide>
 						<Heading caps>
 							You Won't Believe These 2017 Tech Trends Aren't What They Want You To Think They Are
@@ -293,32 +294,6 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 			</Spectacle>
 		);
 	}
-
-	componentDidMount() {
-		if (this.props.lightningMode > 0) {
-			console.log("LIGHTNING MODE ACTIVATED CLICK BUTTON TO START");
-
-			let started = false;
-
-			const btns = document.querySelectorAll('button');
-
-			btns[btns.length - 1].addEventListener('click', () => {
-				if (!started) {
-					console.log("LETS DO THIS");
-					started = true;
-
-					const intId = window.setInterval(() => {
-						const btns = document.querySelectorAll('button');
-						btns[btns.length - 1].click();
-					}, this.props.lightningMode);
-				}
-			});
-		}
-	}
 }
-
-Presentation.defaultProps = {
-	lightningMode: 0
-};
 
 export default Presentation;
