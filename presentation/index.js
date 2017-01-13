@@ -368,6 +368,27 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
 						</Heading>
 						<ImageCite href="http://mydirectsecurity.com/" />
 					</Slide>
+					<Slide>
+						<Heading fit caps padding="0 0 50% 0">
+							Anything else?
+						</Heading>
+						<Layout>
+							<Fill>
+								<Heading textSize="2em" >
+									Brandon Mills
+								</Heading>
+								<Link textColor="white" href="https://twitter.com/brandontmills">@brandontmills</Link><br/>
+								<Link textColor="white" href="mailto:brandon@drivecapital.com">brandon@drivecapital.com</Link>
+							</Fill>
+							<Fill>
+								<Heading textSize="2em">
+									Paul Tela
+								</Heading>
+								<Link textColor="white" href="https://twitter.com/paultela">@paultela</Link><br/>
+								<Link textColor="white" href="mailto:paul@buckeyeinteractive.com">paul@buckeyeinteractive.com</Link>
+							</Fill>
+						</Layout>
+					</Slide>
 				</Deck>
 			</Spectacle>
 		);
