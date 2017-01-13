@@ -68,7 +68,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-	primary: "#ff4081"
+	primary: "#000"
 });
 
 export default class Presentation extends React.Component {
@@ -76,11 +76,11 @@ export default class Presentation extends React.Component {
 		return (
 			<Spectacle theme={theme}>
 				<Deck transition={["slide", "fade"]} transitionDuration={500}>
-					<Slide bgColor="primary">
-						<Heading size={1} fit caps textColor="black">
+					<Slide>
+						<Heading fit caps>
 							2017 Tech Trends
 						</Heading>
-						<Heading size={1} fit caps>
+						<Heading fit caps>
 							You Need to Know
 						</Heading>
 					</Slide>
@@ -89,14 +89,14 @@ export default class Presentation extends React.Component {
 							You Won't Believe These 2017 Tech Trends Aren't What They Want You To Think They Are
 						</Heading>
 					</Slide>
-					<Slide bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
+					<Slide notes="You can even put notes on your slide. How awesome is that?">
 						<Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
-						<Heading size={2} caps fit textColor="primary" textFont="primary">
+						<Heading caps fit>
 							Wait what?
 						</Heading>
 					</Slide>
 					<Slide>
-						<Heading fit caps textColor="black">
+						<Heading fit caps>
 							Stealth Bomber?
 						</Heading>
 						<Heading fit caps>
